@@ -1,0 +1,24 @@
+{
+  "name": "backend-principal",
+  "version": "1.0.0",
+  "description": "backend principal para projetos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreyksonbessa16/backend-principal.git"
+  },
+  "keywords": [
+    "backend",
+    "projeto",
+    "json"
+  ],
+  "author": "Dreykson Oliveira Bessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreyksonbessa16/backend-principal/issues"
+  },
+  "homepage": "https://github.com/dreyksonbessa16/backend-principal#readme"
+}
