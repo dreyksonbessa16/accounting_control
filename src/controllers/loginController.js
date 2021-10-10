@@ -1,10 +1,8 @@
-const express = require('express');
-const router = express.Router();
 const postgres = require('../database/connection').pool;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-router.post('/signin', (req, res, next) => {
+exports.login = (req, res, next) => {
 
     postgres.connect((error, conn) => {
         if (error) { return res.status(500).send({ error: error }) }
@@ -34,6 +32,4 @@ router.post('/signin', (req, res, next) => {
             }
         )
     })
-});
-
-module.exports = router;
+};

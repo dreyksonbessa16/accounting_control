@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-const loginRoutes = require('./src/routes/login-routes');
+const loginRoutes = require('./src/routes/loginRoutes');
 
 app.use('/login', loginRoutes);
 
