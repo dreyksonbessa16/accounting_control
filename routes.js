@@ -2,6 +2,10 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+const loginRoutes = require('./src/routes/login-routes');
+
+app.use('/login', loginRoutes);
+
 app.use((req, res, next) => {
     const erro = new Error('Não encontrado');
     erro.status = 404;
